@@ -4,3 +4,8 @@
   --amber: #f5a623;
   --line: #cfd6d2;
 }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
