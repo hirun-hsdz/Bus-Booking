@@ -9,3 +9,8 @@ body {
   color: var(--ink);
   font-family: "Segoe UI", system-ui, sans-serif;
 }
+.topbar {
+  background: var(--ink);
+  color: #fff;
+  padding: 0.9rem 0;
+}
