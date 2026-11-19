@@ -14,3 +14,84 @@ body {
   color: #fff;
   padding: 0.9rem 0;
 }
+.brand {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: var(--amber);
+}
+.btn-accent {
+  background: var(--amber);
+  border: 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+.btn-accent:hover,
+.btn-accent:focus-visible {
+  background: #e0951a;
+  color: var(--ink);
+}
+.btn-accent:disabled {
+  background: var(--line);
+  color: #7b8782;
+}
+.btn-link {
+  color: var(--ink);
+}
+.bus-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--amber);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.bus-card .price {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 1rem;
+  border-radius: 12px 12px 4px 4px;
+}
+.seat {
+  border: 2px solid var(--ink);
+  background: #fff;
+  border-radius: 6px 6px 2px 2px;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.seat:nth-child(4n + 2) {
+  margin-right: 1rem;
+}
+.seat.taken {
+  background: #d9ddda;
+  border-color: #d9ddda;
+  color: #8a948f;
+  cursor: not-allowed;
+}
+.seat.mine {
+  background: var(--amber);
+  border-color: var(--amber);
+}
+.seat:focus-visible {
+  outline: 3px solid #2a7;
+  outline-offset: 2px;
+}
+.pax {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.75rem;
+}
